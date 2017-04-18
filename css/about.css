@@ -1,0 +1,409 @@
+
+.header{
+    width:100%;
+    height:72px;
+    background:#F4F4F4;
+    overflow: hidden;
+}
+.header:after{
+    clear: both;
+}
+.body{
+    width:1200px;
+    height:100%;
+    margin:0 auto;
+    overflow: hidden;
+    /*background: blue;*/
+}
+.logo{
+    margin-top: 15px;
+    float: left;
+}
+.nav{
+    height:100%;
+    float: left;
+    margin-left:178px;
+    /*background: #000;*/
+}
+.nav li{
+    /*font-family: Microsoft YaHei;*/
+    font-size:16px;
+    float:left;
+    margin:28px 38px 28px 38px;
+}
+.nav li a:hover{
+    cursor: pointer;
+    color:#1B88ED;
+}
+.active{
+    color:#1B88ED;
+}
+.header_right{
+    margin-top:20px;
+    float:right;
+    font-size: 11px;
+
+}
+.reg{
+    margin-right: 12px;
+}
+.reg,.login{
+    width:85px;
+    height:32px;
+    float:left;
+    border:1px solid #999;
+    border-radius: 40px;
+    box-sizing: border-box;
+    background: #1b88ed;
+}
+.login{
+    background: #fff;
+}
+.reg a,.login a{
+    padding-left:20px;
+    line-height: 30px;
+}
+.reg a{
+    color:#fff;
+}
+.header_right .reg:hover {
+    background: #2295ff;
+    /*border:#1B88ED;*/
+    color: #fff;
+}
+.header_right .login:hover{
+    border: 1px solid #1b88ed;
+}
+
+.header_right .reg:hover a{
+    color:#fff;
+}
+.header_right .login:hover a{
+    color: #1b88ed;
+}
+
+/*banner*/
+.aboutus{
+    width:100%;
+    overflow: hidden;
+}
+.banner_about{
+    width:100%;
+    height:400px;
+}
+.banner_about img{
+    width:100%;
+    height: 100%;
+}
+/*关于我们*/
+.about_main,.pinpai_main,.develope_main,.culture_main{
+    width:1200px;
+    margin:0 auto;
+    padding-top: 1px;
+}
+.develope_main .about_title{
+    width:400px;
+    color:#fff;
+}
+.about_title{
+    width:296px;
+    margin:0 auto;
+    margin-top: 56px;
+}
+.about_title h3{
+    float:left;
+    font-size: 34px;
+}
+.about_title span{
+    line-height: 60px;
+    line-height:48px \9;
+    font-size: 22px;
+    padding-left: 20px;
+}
+.about_main li:nth-child(1){
+    /*border: 1px solid red;*/
+    width:490px;
+    float: left;
+    clear:both;
+    font-size: 14px;
+}
+.about_main li:nth-child(2){
+    /*border: 1px solid red;*/
+    width: 652px;
+    float:left;
+    margin-left:54px;
+    font-size: 14px;
+}
+.about_main .about_img{
+    width:490px;
+    float: left;
+    clear:both;
+    font-size: 14px;
+}
+.about_main .about_text{
+    width: 652px;
+    float:left;
+    margin-left:54px;
+    font-size: 14px;
+}
+.about_text p{
+    margin-bottom: 44px;
+    line-height: 24px;
+}
+/*品牌故事*/
+.pinpai_main p{
+    font-size: 14px;
+    margin-bottom: 44px;
+    line-height: 24px;
+}
+/*发展历程*/
+.develope{
+    width: 100%;
+    height: 520px;
+    background-image: url(../img/fazhanglicheneg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.develope_xian{
+    width:1036px;
+    border-bottom: 2px solid #A29CA5;
+    height:1px;
+    margin:0 auto;
+    margin-top:138px;
+}
+.step{
+    width:192px;
+    height:170px;
+    /*border:1px solid #fff;*/
+    float:left;
+    margin-left:106px;
+    margin-top:-85px;
+}
+.step1{
+    margin-left:60px;
+}
+.step_text{
+    width:100%;
+    height:50px;
+    border-radius: 4px;
+    background: #FD5300;
+    color:#fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+}
+.angle{
+    width: 0;
+    height: 0;
+    border-top: 10px solid #FD5300;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    margin-left: 84px;
+}
+.step_yuan{
+    width:14px;
+    height:14px;
+    background: #FD5300;
+    border-radius: 50%;
+    margin-left: 89px;
+    margin-top: 17px;
+}
+.step p{
+    color:#fff;
+    text-align: center;
+}
+.step3 .step_text,.step3 .step_yuan{
+    background: #EBBC00;
+}
+.step3 .step_yuan{
+    width: 24px;
+    height: 24px;
+    margin-left: 84px;
+    margin-top: 11px;
+}
+.step3 .angle{
+    border-top: 10px solid #EBBC00;
+}
+.step2 .step_text{
+    /*margin-top:42px;*/
+    background: #00DBD7;
+}
+.step2 .step_yuan{
+    width:20px;
+    height:20px;
+    background:#00DBD7;
+    margin-top:36px;
+    margin-left: 86px;
+}
+.step2 .angle{
+    margin-top:15px;
+    border-top: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid #00DBD7;
+    border-left: 12px solid transparent;
+}
+
+.step4 .step_text{
+    background: #00BAFF;
+}
+.step4 .step_yuan{
+    width: 28px;
+    height: 28px;
+    background: #00BAFF;
+    margin-top: 32px;
+    margin-left: 82px;
+}
+.step4 .angle{
+    margin-top: 11px;
+    border-bottom: 12px solid #00BAFF;
+}
+/*企业文化*/
+.culture{
+    width:100%;
+    height:536px;
+}
+.culture .about_title{
+    width: 350px;
+}
+.culture_main li{
+    width:25%;
+    /*border:1px solid red;*/
+    box-sizing: border-box;
+    float:left;
+    text-align: center;
+    margin-top:42px;
+}
+.culture_xian{
+    width:40px;
+    height:0;
+    border-bottom: 2px solid #218BED;
+    margin:0 auto;
+    margin-top:-12px;
+}
+.text_top{
+    font-size: 20px;
+}
+.text_bottom{
+    font-size: 14px;
+}
+
+
+
+/*footer开始*/
+.footer{
+    height:142px;
+    background:#162635;
+    padding-top:1px;
+    position: relative;
+}
+.zhuangshi{
+    width:1200px;
+    height:150px;
+    position: absolute;
+    left: 0;
+    right:0;
+    bottom:104px;
+    margin:auto;
+}
+.zhuangshi span{
+    padding:0;
+}
+.zhuangshi span:nth-child(1){
+    position: absolute;
+    left: -16px;
+    bottom: 33px;
+}
+.zhuangshi span:nth-child(2){
+    position: absolute;
+    left:86px;
+    bottom: 26px;
+}
+.zhuangshi span:nth-child(3){
+    position: absolute;
+    left:246px;
+    bottom: 26px;
+}
+.zhuangshi span:nth-child(4){
+    position: absolute;
+    left:464px;
+    bottom: 22px;
+}
+.zhuangshi span:nth-child(5){
+    position: absolute;
+    left:580px;
+    bottom: -6px;
+    animation: qiqiu 3s infinite;
+    -webkit-animation: qiqiu 3s infinite;
+    -ms-animation:qiqiu 3s infinite;
+}
+@keyframes qiqiu {
+    0% {bottom:-6px;}
+    50% {bottom:10px;}
+    100%{bottom:-6px}
+}
+@-webkit-keyframes qiqiu {
+    0% {bottom:-6px;}
+    50% {bottom:10px;}
+    100%{bottom:-6px}
+}
+@-ms-keyframes qiqiu {
+    0% {bottom:-6px;}
+    50% {bottom:10px;}
+    100%{bottom:-6px}
+}
+.returnTop:hover{
+    cursor:pointer;
+}
+.zhuangshi span:nth-child(6){
+    position: absolute;
+    left:710px;
+    bottom: 26px;
+}
+.zhuangshi span:nth-child(7){
+    position: absolute;
+    left:850px;
+    bottom: 33px;
+}
+.zhuangshi span:nth-child(8){
+    position: absolute;
+    left:970px;
+    bottom: 28px;
+}
+.zhuangshi span:nth-child(9){
+    position: absolute;
+    left:1060px;
+    bottom:66px;
+}
+.zhuangshi span:nth-child(10){
+    position: absolute;
+    right:-6px;
+    bottom: 33px;
+}
+.zhuangshi span:nth-child(11){
+    position: absolute;
+    right: 66px;
+    bottom: 66px;
+}
+.rexian{
+    width:756px;
+    margin:0 auto;
+    text-align: center;
+    color:#fff;
+    font-size: 14px;
+    margin-top:54px;
+    position: relative;
+}
+.rexian a{
+    color:#fff;
+}
+.rexian span{
+    display:inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.weixinPic .weixinerweima{
+    position: absolute;
+    bottom: 56px;
+    right: 88px;
+    display:none;
+}

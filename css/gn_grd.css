@@ -1,0 +1,367 @@
+
+.header{
+    width:100%;
+    height:72px;
+    background:#F4F4F4;
+    overflow: hidden;
+}
+.header:after{
+    clear: both;
+}
+.body{
+    width:1200px;
+    height:100%;
+    margin:0 auto;
+    overflow: hidden;
+    /*background: blue;*/
+}
+.logo{
+    margin-top: 15px;
+    float: left;
+}
+.nav{
+    height:100%;
+    float: left;
+    margin-left:178px;
+    /*background: #000;*/
+}
+.nav li{
+    /*font-family: Microsoft YaHei;*/
+    font-size:16px;
+    float:left;
+    margin:28px 38px 28px 38px;
+}
+.nav li a:hover{
+    cursor: pointer;
+    color:#1B88ED;
+}
+.active{
+    color:#1B88ED;
+}
+.header_right{
+    margin-top:20px;
+    float:right;
+    font-size: 11px;
+
+}
+.reg{
+    margin-right: 12px;
+}
+.reg,.login{
+    width:85px;
+    height:32px;
+    float:left;
+    border:1px solid #999;
+    border-radius: 40px;
+    box-sizing: border-box;
+    background: #1b88ed;
+}
+.login{
+    background: #fff;
+}
+.reg a,.login a{
+    padding-left:20px;
+    line-height: 30px;
+}
+.reg a{
+    color:#fff;
+}
+.header_right .reg:hover {
+    background: #2295ff;
+    /*border:#1B88ED;*/
+    color: #fff;
+}
+.header_right .login:hover{
+    border: 1px solid #1b88ed;
+}
+
+.header_right .reg:hover a{
+    color:#fff;
+}
+.header_right .login:hover a{
+    color: #1b88ed;
+}
+
+
+/*body开始*/
+.gnPic img{
+    width:100%;
+    height:270px;
+}
+
+.bigBox ul{
+    width:1200px;
+    margin:0 auto;
+    margin-top: 104px;
+    overflow: hidden;
+}
+.bigBox ul li{
+    width:33.3%;
+    float:left;
+    border-bottom: 1px solid #ccc;
+}
+.bigBox ul li:nth-child(2){
+    border-bottom: 1px solid #F03B7A;
+}
+.bigBox ul li:nth-child(3){
+    border-bottom: 1px solid #B2C23F;
+}
+.bigBox ul li div{
+    width:166px;
+    height:168px;
+    margin:0 auto;
+}
+.cardsTop{
+    height:568px;
+    width:1200px;
+    margin:0 auto;
+    /*border-bottom:1px solid red;*/
+}
+.cardsLeft{
+    width:50%;
+    height:480px;
+
+    float: left;
+    /*border-right: 1px solid red;*/
+    box-sizing: border-box;
+}
+.cardsRight{
+    width:50%;
+    float:left;
+}
+.cardsLeft img{
+    padding-left: 70px;
+    padding-top: 74px;
+}
+.biaoti{
+    border-bottom: 1px dashed #000;
+    width:376px;
+    height: 80px;
+    margin-top: 200px;
+    margin-left: 124px;
+}
+.biaoti img{
+    float: left;
+    margin-top: 32px;
+    margin-left: -40px;
+}
+.biaoti span{
+    line-height: 114px;
+    font-size: 18px;
+    padding-left: 18px;
+}
+.cardsRight p:nth-child(2){
+    font-weight: bolder;
+    font-size:32px;
+    margin-left: 86px;
+    margin-top: 64px;
+    margin-bottom: 12px;
+}
+.cardsRight p:nth-child(3){
+    font-size:22px;
+    margin-left: 86px;
+    margin-top: 0;
+    color:#868674;
+    width: 464px;
+}
+.cardsTop:nth-child(2) .biaoti img{
+    margin-top: -42px;
+    margin-left: -96px;
+}
+.cardsTop:nth-child(2) .cardsRight img{
+    margin-left:18px;
+    margin-top: 46px;
+}
+.cardsLeft .check{
+    margin-left:156px;
+    font-weight: bolder;
+    font-size:32px;
+    margin-top: 64px;
+    margin-bottom: 12px;
+}
+.cardsLeft .showCheck{
+    font-size:22px;
+    margin-left: 156px;
+    margin-top: 0;
+    color:#868674;
+}
+.cardsTop:nth-child(2) .biaoti{
+    margin-left:184px;
+}
+.cardsTop:nth-child(3) .cardsLeft{
+     margin-top:-152px;
+ }
+.cardsTop:nth-child(3) .cardsRight{
+    margin-top:-152px;
+}
+.cardsTop:nth-child(2) .cardsLeft{
+    margin-top:-48px;
+}
+.cardsTop:nth-child(2) .cardsRight{
+    margin-top:-48px;
+}
+
+.qiyeduan:nth-child(2n-1) img{
+    padding-top: 124px;
+    width: 540px;
+    padding-left: 102px;
+}
+.qiyeduan:nth-child(2n) img{
+    width: 540px;
+}
+.zntj{
+    margin-top:120px;
+}
+.cardsTop .grgl img{
+    padding-top:0;
+}
+#grgl_text{
+    margin-top:-274px;
+}
+.fbgg{
+    margin-top: 66px;
+    margin-left: 188px;
+}
+.fbgg img{
+    margin-top: -46px;
+    margin-left: -104px;
+}
+
+.gn_title:hover{
+    cursor: pointer;
+}
+.gn_con{
+    width:100%;
+    display:none;
+}
+.gn_con_active{
+    display:block;
+}
+.jiao{
+    position: relative;
+    bottom: 42px;
+    left: 70px;
+    display:none;
+}
+
+
+
+/*footer开始*/
+.footer{
+    height:142px;
+    background:#162635;
+    padding-top:1px;
+    position: relative;
+}
+.zhuangshi{
+    width:1200px;
+    height:150px;
+    position: absolute;
+    left: 0;
+    right:0;
+    bottom:104px;
+    margin:auto;
+}
+.zhuangshi span{
+    padding:0;
+}
+.zhuangshi span:nth-child(1){
+    position: absolute;
+    left: -16px;
+    bottom: 33px;
+}
+.zhuangshi span:nth-child(2){
+    position: absolute;
+    left:86px;
+    bottom: 26px;
+}
+.zhuangshi span:nth-child(3){
+    position: absolute;
+    left:246px;
+    bottom: 26px;
+}
+.zhuangshi span:nth-child(4){
+    position: absolute;
+    left:464px;
+    bottom: 22px;
+}
+.zhuangshi span:nth-child(5){
+    position: absolute;
+    left:580px;
+    bottom: -6px;
+    animation: qiqiu 3s infinite;
+    -webkit-animation: qiqiu 3s infinite;
+    -ms-animation:qiqiu 3s infinite;
+}
+@keyframes qiqiu {
+    0% {bottom:-6px;}
+    50% {bottom:10px;}
+    100%{bottom:-6px}
+}
+@-webkit-keyframes qiqiu {
+    0% {bottom:-6px;}
+    50% {bottom:10px;}
+    100%{bottom:-6px}
+}
+@-ms-keyframes qiqiu {
+    0% {bottom:-6px;}
+    50% {bottom:10px;}
+    100%{bottom:-6px}
+}
+.returnTop:hover{
+    cursor:pointer;
+}
+.zhuangshi span:nth-child(6){
+    position: absolute;
+    left:710px;
+    bottom: 26px;
+}
+.zhuangshi span:nth-child(7){
+    position: absolute;
+    left:850px;
+    bottom: 33px;
+}
+.zhuangshi span:nth-child(8){
+    position: absolute;
+    left:970px;
+    bottom: 28px;
+}
+.zhuangshi span:nth-child(9){
+    position: absolute;
+    left:1060px;
+    bottom:66px;
+}
+.zhuangshi span:nth-child(10){
+    position: absolute;
+    right:-6px;
+    bottom: 33px;
+}
+.zhuangshi span:nth-child(11){
+    position: absolute;
+    right: 66px;
+    bottom: 66px;
+}
+.rexian{
+    width:756px;
+    margin:0 auto;
+    text-align: center;
+    color:#fff;
+    font-size: 14px;
+    margin-top:54px;
+    position: relative;
+}
+.rexian a{
+    color:#fff;
+}
+.rexian span{
+    display:inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.weixinPic .weixinerweima{
+    position: absolute;
+    bottom: 56px;
+    right: 88px;
+    display:none;
+}
+

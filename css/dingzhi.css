@@ -4,6 +4,7 @@
     height:72px;
     background:#F4F4F4;
     overflow: hidden;
+    z-index: 9999;
 }
 .header:after{
     clear: both;
@@ -86,6 +87,7 @@
     width:100%;
     height:272px;
     background: url("../img/dingzhi_banner.jpg") center center;
+    margin-top: 72px;
 }
 .dingzhi_main{
     width:1200px;

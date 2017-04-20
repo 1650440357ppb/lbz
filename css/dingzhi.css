@@ -1,9 +1,13 @@
 
+/*头部部分*/
 .header{
     width:100%;
     height:72px;
     background:#F4F4F4;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 9999;
 }
 .header:after{
@@ -23,14 +27,15 @@
 .nav{
     height:100%;
     float: left;
-    margin-left:178px;
+    margin-left:172px;
     /*background: #000;*/
 }
 .nav li{
     /*font-family: Microsoft YaHei;*/
     font-size:16px;
     float:left;
-    margin:28px 38px 28px 38px;
+    margin:28px 32px 28px 32px;
+    font-family: "微软雅黑", "microsoft yahei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
 }
 .nav li a:hover{
     cursor: pointer;
@@ -43,7 +48,7 @@
     margin-top:20px;
     float:right;
     font-size: 11px;
-
+    font-family: "微软雅黑", "microsoft yahei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
 }
 .reg{
     margin-right: 12px;
@@ -203,16 +208,17 @@
 }
 
 /*footer开始*/
-/*footer开始*/
 .footer{
+    width:100%;
     height:142px;
-    background:#162635;
+    background-color:#162635;
     padding-top:1px;
     position: relative;
+    /*overflow: hidden;*/
 }
 .zhuangshi{
     width:1200px;
-    height:150px;
+    height:94px;
     position: absolute;
     left: 0;
     right:0;
@@ -307,6 +313,9 @@
     margin-top:54px;
     position: relative;
 }
+.beian{
+    color: #3A668F;
+}
 .rexian a{
     color:#fff;
 }
@@ -315,9 +324,9 @@
     margin-left: 10px;
     cursor: pointer;
 }
-.weixinPic .weixinerweima {
+.weixinPic .weixinerweima{
     position: absolute;
     bottom: 56px;
     right: 88px;
-    display: none;
+    display:none;
 }

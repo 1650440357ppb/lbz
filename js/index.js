@@ -63,7 +63,7 @@ window.onload=function() {
         rightbot1.src="img/rightbotn.png";
     }
 
-   //返回顶部
+      //返回顶部
     document.documentElement.scrollTop = 1;
     var obj = document.documentElement.scrollTop?document.documentElement:document.body;
     var returnTop=document.getElementsByClassName("returnTop")[0];

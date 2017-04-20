@@ -44,50 +44,60 @@
 <!--头部结束-->
 <!--建筑考勤开始-->
 <div class="jzBanner">
-    <div class="jz">
-        <h3 class="title">鲁班长-建筑行业考勤神器</h3>
-        <p>告别传统考勤模式,开启建筑行业移动互联网时代</p>
-        <div class="play" >
-            <a ><img src="img/play.png" alt="" id="btn-play-video"></a>
-        </div>
+    <div class="jzbanner_box">
+        <div class="jz bannerTu">
+            <h3 class="title">鲁班长-建筑行业考勤神器</h3>
+            <p>告别传统考勤模式,开启建筑行业移动互联网时代</p>
+            <div class="play" >
+                <a ><img src="img/play.png" alt="" id="btn-play-video"></a>
+            </div>
 
-        <div id="dd-video-dialog" class="dd-video-dialog hidden bg">
-            <div class="wrap">
-                <div class="video">
-                    <video id="video" src="audio/LBZ_video.mp4" width="960" height="540" controls poster="img/lbz_ad.png"></video>
-                    <!--<embed src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=p0363exr0hu&auto=1" allowFullScreen="true" quality="high" width="960" height="540" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>-->
-                    <!--<iframe frameborder="0" width="960" height="540" src="https://v.qq.com/iframe/player.html?vid=p0363exr0hu&tiny=0&auto=1" allowfullscreen="true" quality="high" width="960" height="540" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></iframe>-->
-                    <a class="close"></a>
+            <div id="dd-video-dialog" class="dd-video-dialog hidden bg">
+                <div class="wrap">
+                    <div class="video">
+                        <video id="video" src="audio/LBZ_video.mp4" width="960" height="540" controls poster="img/lbz_ad.png"></video>
+                        <!--<embed src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=p0363exr0hu&auto=1" allowFullScreen="true" quality="high" width="960" height="540" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>-->
+                        <!--<iframe frameborder="0" width="960" height="540" src="https://v.qq.com/iframe/player.html?vid=p0363exr0hu&tiny=0&auto=1" allowfullscreen="true" quality="high" width="960" height="540" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></iframe>-->
+                        <a class="close"></a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>
-    <div class="jz2" style="display:none">
-        <div class="jz2_main">
-            <div class="log_s">
-                <a href=""><img src="img/log_s.png" alt=""/></a>
-                <a href=""><img src="img/log_lijie.png" alt=""/></a>
+        </div>
+        <div class="jz2 bannerTu" style="">
+            <div class="jz2_main">
+                <div class="log_s">
+                    <a href=""><img src="img/log_s.png" alt=""/></a>
+                    <a href=""><img src="img/log_lijie.png" alt=""/></a>
+                </div>
+
+                <h3 class="title">合作与共赢</h3>
+                <p>鲁班长科技与深圳市立捷装饰设计工程有限公司签署战略合作协议！</p>
+                <div class="showmore">
+                    <a href="">查看新闻</a>
+                </div>
             </div>
 
-            <h3 class="title">合作与共赢</h3>
-            <p>鲁班长科技与深圳市立捷装饰设计工程有限公司签署战略合作协议！</p>
-            <div class="showmore">
-                <a href="">查看新闻</a>
-            </div>
         </div>
-
-    </div>
-    <div class="jz3" style="display:none">
-        <div class="jz3_main">
-            <h3 class="title">刷脸考勤</h3>
-            <p>告别传统考勤方式，拥抱移动互联网吧！</p>
-            <div class="down_liji">
-                <a href="">立即下载</a>
+        <div class="jz3 bannerTu" style="">
+            <div class="jz3_main">
+                <h3 class="title">刷脸考勤</h3>
+                <p>告别传统考勤方式，拥抱移动互联网吧！</p>
+                <div class="down_liji">
+                    <a href="">立即下载</a>
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
+    <ul class = "jzbanner_list">
+        <li class = "list_active jzlist"></li>
+        <li class="jzlist"></li>
+        <li class="jzlist"></li>
+    </ul>
+    <div class = "leftbut"><</div>
+    <div class = "rightbut">></div>
+
 </div>
 
 <!--我是开始-->
@@ -248,6 +258,7 @@ $(function(){
     }).mouseout(function(){
         this.src="img/play.png";
     })
+
 
 
 

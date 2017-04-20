@@ -1,5 +1,76 @@
 window.onload=function() {
 
+    //jzbanner
+    var jzimgs=document.getElementsByClassName("bannerTu");
+    var jzlists=document.getElementsByClassName("jzlist");
+    var jzbanbox=document.getElementsByClassName("jzBanner")[0];
+    var jzleftbut=document.getElementsByClassName("leftbut")[0];
+    var jzrightbut=document.getElementsByClassName("rightbut")[0];
+    for(var i=0;i<jzimgs.length;i++){
+        jzimgs[i].style.left="100%";
+    }
+
+    var now=0;
+    var next=0;
+    function move(){
+        next++;
+        if(next>=jzimgs.length){
+            next=0;
+        }
+        jzimgs[next].style.left="100%";
+        jzimgs[now].style.left="0px";
+        animate(jzimgs[now],{left:"100%"});
+        animate(jzimgs[next],{left:0});
+        jzlists[now].class="";
+        jzlists[next].class="list_active";
+        now=next;
+    }
+
+    function leftmove(){
+        next--;
+        if(next<=-1){
+            next=jzimgs.length-1;
+        }
+        jzimgs[next].style.left="-100%";
+        jzimgs[now].style.left="0px";
+        animate(jzimgs[now],{left:"100%"});
+        animate(jzimgs[next],{left:0});
+        jzlists[now].class="";
+        jzlists[next].class="list_active";
+        now=next;
+    }
+    var t1=setInterval(move,2000);
+
+    jzbanbox.onmouseover=function(){
+        clearInterval(t1);
+        jzleftbut.style.display="block";
+        jzrightbut.style.display="block";
+    }
+    jzbanbox.onmouseout=function(){
+        t1=setInterval(move,2000);
+        jzleftbut.style.display="none";
+        jzrightbut.style.display="none";
+    }
+    jzleftbut.onclick=function(){
+        leftmove();
+    }
+    jzrightbut.onclick=function(){
+        move();
+    }
+    for(var i=0;i<jzlists.length;i++){
+        jzlists[i].index=i;
+        jzlists[i].onclick=function(){
+            next=this.index;
+            jzimgs[next].style.left="100%";
+            jzimgs[now].style.left="0px";
+            animate(jzimgs[now],{left:"-100%"});
+            animate(jzimgs[next],{left:0});
+            jzlists[now].class="";
+            jzlists[next].class="list_active";
+            now=mext;
+        }
+    }
+
     //切换轮播部分
     var imgs = document.getElementsByClassName("banner_con");
     var leftBut = document.getElementsByClassName("leftbotn")[0];

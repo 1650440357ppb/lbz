@@ -14,6 +14,7 @@ window.onload = function(){
             woshi_con[this.name].style.display="block";
             //title[this.name].className = "title title_active";
             this.className = "woshi_title woshi_active";
+            this.background="#38BBF2";
 
         }
     }

@@ -234,7 +234,10 @@
     box-shadow: 3px 10px 12px #9CDDEA;
     position: absolute;
     transition: all 0.1s;
-
+    -webkit-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
 }
 .my li a{
     color:#fff;
@@ -322,6 +325,7 @@
     color:#FFF;
     margin-top:14px;
 }
+
 .jz2_main{
      width:1200px;
      height:100%;
@@ -454,35 +458,37 @@
     overflow: hidden;
 }
 .jzbanner_box{
-    width:100%;
+    /*width:100%;*/
+    width:1920px;
     height:100%;
     position: relative;
+    overflow: hidden;
 }
 .bannerTu{
     position: absolute;
     left:0;top:0;
 }
 .jzbanner_list{
-    width:135px;
-    height:30px;
+    width: 142px;
+    height: 14px;
     position:absolute;
     left:0;
     right:0;
     margin:0 auto;
     bottom:20px;
-    border: 1px solid red;
 }
 .jzbanner_list li{
-    width:30px;
-    height:30px;
-    margin-right:15px;
+    width:12px;
+    height:12px;
+    margin-right:14px;
+    margin-left: 19px;
     float:left;
-    background:#666;
+    border: 1px solid #fff;
     border-radius:50%;
     cursor:pointer;
 }
 .jzbanner_list .list_active{
-    background:#E7281C;
+    background:#fff;
 }
 .leftbut, .rightbut{
     width:30px;
@@ -507,12 +513,16 @@
     right:0;
 }
 .leftbut:hover{
-    background:red;
+    background:#666;
+    opacity: 0.7;
 }
 .rightbut:hover{
-    background:red;
+    background:#ccc;
 }
-
+.jz_warp{
+    width:1200px;
+    margin:0 auto;
+}
 
 
 

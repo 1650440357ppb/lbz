@@ -458,8 +458,8 @@
     overflow: hidden;
 }
 .jzbanner_box{
-    /*width:100%;*/
-    width:1920px;
+    width:100%;
+    /*width:1920px;*/
     height:100%;
     position: relative;
     overflow: hidden;

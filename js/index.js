@@ -6,9 +6,11 @@ window.onload=function() {
     var jzbanbox=document.getElementsByClassName("jzBanner")[0];
     var jzleftbut=document.getElementsByClassName("leftbut")[0];
     var jzrightbut=document.getElementsByClassName("rightbut")[0];
+    var kuan=document.getElementsByClassName("bannerTu")[0].offsetWidth;
+    //alert(kuan);
 
     for(var i=1;i<jzimgs.length;i++){
-        jzimgs[i].style.left="1920px";
+        jzimgs[i].style.left=kuan+"px";
     }
 
     var now=0;
@@ -18,9 +20,9 @@ window.onload=function() {
         if(next>=jzimgs.length){
             next=0;
         }
-        jzimgs[next].style.left="1920px";
+        jzimgs[next].style.left=kuan+"px";
         jzimgs[now].style.left="0px";
-        animate(jzimgs[now],{left:-1920});
+        animate(jzimgs[now],{left:-kuan});
         animate(jzimgs[next],{left:0});
         jzlists[now].className="";
         jzlists[next].className="list_active";
@@ -32,9 +34,9 @@ window.onload=function() {
         if(next<=-1){
             next=jzimgs.length-1;
         }
-        jzimgs[next].style.left="-1920px";
+        jzimgs[next].style.left=-kuan+"px";
         jzimgs[now].style.left="0px";
-        animate(jzimgs[now],{left:1920});
+        animate(jzimgs[now],{left:kuan});
         animate(jzimgs[next],{left:0});
         jzlists[now].className='';
         jzlists[next].className="list_active";
@@ -62,9 +64,9 @@ window.onload=function() {
         jzlists[i].index=i;
         jzlists[i].onclick=function(){
             next=this.index;
-            jzimgs[next].style.left="1920px";
+            jzimgs[next].style.left=kuan+"px";
             jzimgs[now].style.left="0px";
-            animate(jzimgs[now],{left:-1920});
+            animate(jzimgs[now],{left:-kuan});
             animate(jzimgs[next],{left:0});
             jzlists[now].className="";
             jzlists[next].className="list_active";

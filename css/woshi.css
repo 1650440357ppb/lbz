@@ -126,47 +126,85 @@
     height:84%;
     background:url("../img/bg_woshi.jpg") center -36px;
 }
-.workerPic img:nth-child(1){
-    padding-left: 143px;
-    padding-top: 50px;
-    width: 526px;
-    height: 485px;
+.workerPic .book{
+    padding-left: 173px;
+    padding-top: 187px;
 }
-.workerPic img:nth-child(2){
+.w_duihua1{
+    margin-bottom: 136px;
+    animation: m_duihua 2s infinite 0.8s alternate;
+}
+.workerPic .worker_t1{
     position: relative;
     right: -43px;
-    bottom: 237px;
+    bottom: 264px;
 }
-.workerPic img:nth-child(3){
+.workerPic .worker_hand{
     position: relative;
-    width:438px;
-    bottom: 172px;
+    left: -266px;
+    top: 20px;
+    animation: hand 1.2s infinite .4s alternate;
 }
-.workerPic img:nth-child(4){
-    position: relative;
-    right: -186px;
-    bottom: -56px;
+@keyframes hand {
+    0%{
+       opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
-.workerPic img:nth-child(5){
+.workerPic .worker_t1{
     position: relative;
-    top: 49px;
-    width: 496px;
+    right: -112px;
+    bottom: 126px;
 }
-.workerPic img:nth-child(6){
-    position: relative;
-    width: 446px;
-    right: -258px;
-    bottom: 168px;
+.workerPic .worker_t2{
+    margin-top: 262px;
 }
-.workerPic img:nth-child(7){
+.workerPic .worker_jilu{
     position: relative;
-    bottom:116px;
+    right: -282px;
+    bottom: -138px;
 }
-.workerPic img:nth-child(8){
+.workerPic .w_duihua2{
     position: relative;
-    left: 330px;
-    top: 90px;
-    width: 420px;
+    right: 60px;
+    bottom: 42px;
+    animation: m_duihua 2s infinite alternate;
+}
+.workerPic .worker3{
+    margin-top: 374px;
+    margin-left: -88px;
+}
+.workerPic .w_duihua3{
+    position: relative;
+    left: 272px;
+    top: -232px;
+    animation: m_duihua 2s infinite 1s alternate;
+}
+.workerPic .worker_t3{
+    margin-left: 268px;
+    margin-bottom: 180px;
+}
+.worker_t4{
+    margin-bottom: 166px;
+    margin-left: -12px;
+}
+.worker4{
+    margin-left: 220px;
+    margin-top: 274px;
+}
+.workerPic .w_duihua4{
+    position: relative;
+    bottom: 264px;
+    left: 440px;
+    animation: m_duihua 2s infinite 0s alternate;
+}
+.workerPic .w_duihua5{
+    position: relative;
+    left: 200px;
+    top: -60px;
+    animation: m_duihua 2s infinite 2s alternate;
 }
 .go{
     /*display:none;*/
@@ -184,43 +222,110 @@
     bottom:0;
 }
 .workerPic .go{
-    margin-top:206px;
+    margin-top:168px;
 }
 .monitorPic .go{
-    margin-top:526px;
-    margin-bottom: 0;
+    position: relative;
+    top: 1166px;
 }
 .monitorPic{
     height:78%;
+    position: relative;
     background: url(../img/moniter_bg.jpg) center -28px no-repeat;
 }
 .monitorPic img:nth-child(1){
     padding-left: 116px;
     padding-top: 146px;
 }
-.monitorPic img:nth-child(2){
-    padding-left: 243px;
-    padding-bottom: 230px;
+.monitorPic .t1{
+    padding-left: 78px;
+    padding-bottom: 76px;
 }
-.monitorPic img:nth-child(3){
+.monitorPic .t2{
     position: relative;
-    left: 2%;
-    top: -80px;
+    left: 3%;
+    top: 50px;
 }
-.monitorPic img:nth-child(4){
+.monitorPic .m2{
     position: relative;
-    top: -1%;
-    right: -31%;
+    right: -24%;
+    bottom: -148px;
 }
-.monitorPic img:nth-child(5){
+.monitorPic .m3{
     position: relative;
-    left: -59%;
-    top: 510px;
+    left: 4%;
+    top: 466px;
 }
-.monitorPic img:nth-child(6){
+.monitorPic .m4{
     position: relative;
-    top: 288px;
+    left: 54%;
+    top: 578px;
+}
+.monitorPic .m5{
+    position: relative;
+    top: 1056px;
+    left: -54%;
+}
+.monitorPic .t3{
+    position: relative;
+    top: 218px;
     right: -66%;
+}
+.monitorPic .t5{
+    position: relative;
+    top: 820px;
+    left: 69%;
+}
+.monitorPic .t4{
+    position: relative;
+    left: -34%;
+    top: 760px;
+}
+.m_duihua1{
+    position: absolute;
+    top: 112px;
+    left: 400px;
+    animation:m_duihua 2s infinite alternate;
+}
+.m_duihua2{
+    position: relative;
+    left: -18%;
+    animation:m_duihua 2s 1s infinite alternate;
+}
+.m_duihua3{
+    position: relative;
+    top: 282px;
+    left: -13%;
+    animation:m_duihua 2s  0.6s infinite alternate;
+}
+.m_duihua4{
+    position: relative;
+    top: 240px;
+    left: -54%;
+    animation:m_duihua 2s 2.6s infinite alternate;
+}
+.m_duihua5{
+    position: relative;
+    top: 680px;
+    left: 5%;
+    z-index: 99;
+    animation:m_duihua 2s infinite alternate;
+}
+.m_duihua6{
+    position: relative;
+    z-index: 999;
+    top: 866px;
+    left: -9%;
+    animation:m_duihua 2s 1s infinite alternate;
+}
+@keyframes m_duihua {
+    0%{
+        transform: scale(1.2,1.2);
+
+    }
+    100%{
+        transform: scale(1,1);
+    }
 }
 .busessPic{
     background: url("../img/busess_bg.jpg") center top no-repeat;
@@ -252,12 +357,12 @@
     margin-right: 118px;
 }
 .busessPic ul li:nth-child(5) div{
-    margin-top: 88px;
-    margin-right: 118px;
+    margin-top: 55px;
+    margin-left: 210px;
 }
 .busessPic ul li:nth-child(6) div{
     margin-top: 136px;
-    margin-left: 120px;
+    margin-left: 162px;
 }
 .busessPic ul li:nth-child(7) div{
     margin-top: 186px;
@@ -267,10 +372,67 @@
     margin-top: 78px;
     margin-left: 270px;
 }
-.busess_52{
-    float: right;
-    margin-top: -362px;
-    margin-right: -46px;
+.quan{
+    position: relative;
+    top: -174px;
+    left: -52px;
+    animation: quan 0.3s infinite 0s alternate;
+}
+.q2{
+    top: -184px;
+    left: -64px;
+    animation: quan 0.3s infinite 0.3s alternate;
+}
+.q3{
+    top: -202px;
+    left: -80px;
+    animation: quan 0.3s infinite 0.6s alternate;
+}
+.q4{
+    top: -324px;
+    left: 441px;
+    animation: quan 0.9s 0.9s alternate,q4 1s  infinite 1s alternate;
+
+}
+@keyframes q4 {
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1.1,1.1);
+    }
+}
+@keyframes quan {
+    0%{
+        opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+.ren1{
+    position: relative;
+    left: -228px;
+    top: -80px;
+    animation: quan 1.4s infinite 0.6s alternate;
+}
+.ren2{
+    position: relative;
+    top: 6px;
+    left: -294px;
+    animation: quan 1.9s infinite 1.6s alternate;
+}
+.ren3{
+    position: relative;
+    top: -80px;
+    left: -120px;
+    animation: quan 1.2s infinite 2s alternate;
+}
+.ren4{
+    position: relative;
+    top: -52px;
+    left: 152px;
+    animation: quan 1.8s infinite 2.4s alternate;
 }
 
 .woshi_con{
@@ -284,14 +446,16 @@
 
 /*footer开始*/
 .footer{
+    width:100%;
     height:142px;
-    background:#162635;
+    background-color:#162635;
     padding-top:1px;
     position: relative;
+    /*overflow: hidden;*/
 }
 .zhuangshi{
     width:1200px;
-    height:150px;
+    height:94px;
     position: absolute;
     left: 0;
     right:0;
@@ -301,27 +465,27 @@
 .zhuangshi span{
     padding:0;
 }
-.zhuangshi span:nth-child(1){
+.zhuangshi .zs1{
     position: absolute;
     left: -16px;
     bottom: 33px;
 }
-.zhuangshi span:nth-child(2){
+.zhuangshi .zs2{
     position: absolute;
     left:86px;
     bottom: 26px;
 }
-.zhuangshi span:nth-child(3){
+.zhuangshi .zs3{
     position: absolute;
     left:246px;
     bottom: 26px;
 }
-.zhuangshi span:nth-child(4){
+.zhuangshi .zs4{
     position: absolute;
     left:464px;
     bottom: 22px;
 }
-.zhuangshi span:nth-child(5){
+.zhuangshi .returnTop{
     position: absolute;
     left:580px;
     bottom: -6px;
@@ -347,32 +511,32 @@
 .returnTop:hover{
     cursor:pointer;
 }
-.zhuangshi span:nth-child(6){
+.zhuangshi .zs5{
     position: absolute;
     left:710px;
     bottom: 26px;
 }
-.zhuangshi span:nth-child(7){
+.zhuangshi .zs6{
     position: absolute;
     left:850px;
     bottom: 33px;
 }
-.zhuangshi span:nth-child(8){
+.zhuangshi .zs7{
     position: absolute;
     left:970px;
     bottom: 28px;
 }
-.zhuangshi span:nth-child(9){
+.zhuangshi .zs8{
     position: absolute;
     left:1060px;
     bottom:66px;
 }
-.zhuangshi span:nth-child(10){
+.zhuangshi .zs9{
     position: absolute;
     right:-6px;
     bottom: 33px;
 }
-.zhuangshi span:nth-child(11){
+.zhuangshi .zs10{
     position: absolute;
     right: 66px;
     bottom: 66px;
@@ -385,6 +549,9 @@
     font-size: 14px;
     margin-top:54px;
     position: relative;
+}
+.beian{
+    color: #3A668F;
 }
 .rexian a{
     color:#fff;

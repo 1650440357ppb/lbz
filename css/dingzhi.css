@@ -106,7 +106,61 @@
 .dingzhi_text{
     color:#fff;
     font-size: 28px;
+    animation: srdz_text 0.6s 1.2s ;
  }
+.dongtai_si{
+    animation: si .6s .2s 1;
+ }
+
+.dongtai_ren{
+    animation: ren .6s .8s 1;
+}
+.dongtai_ding{
+    animation:ding .6s .8s 1;
+}
+.dongtai_zhi{
+    animation:zhi .6s .2s 1;
+}
+@keyframes srdz_text {
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1.2,1.2);
+    }
+}
+@keyframes si {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes ren {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes ding {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes zhi {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 /*解决方案部分*/
 .jiejue{
     width:100%;
@@ -120,6 +174,9 @@
 .part0{
     margin-top:86px;
     margin-bottom: 56px;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    perspective: 800px;
 }
 .part0 img:nth-child(1){
     margin-bottom:98px;
@@ -130,6 +187,36 @@
     padding: 0px 24px;
     padding-top:24px;
 }
+.zhuji{
+    position: absolute;
+    top: 507px;
+    left: 74px;
+}
+.xianshi{
+    position: relative;
+    z-index: 999;
+}
+.shaoma{
+    position: absolute;
+    top: 458px;
+    right: 408px;
+}
+.shexiang{
+    position: absolute;
+    top: 372px;
+    right: 260px;
+    animation: shexiang 3s infinite alternate;
+}
+@keyframes shexiang {
+    0%{
+        transform: scale(1.2,1.2) rotateY(0deg);
+
+    }
+    100%{
+        transform: scale(1,1) rotateY(20deg);
+    }
+}
+
 .part1{
     height:436px;
     background: #F4F7F9;
@@ -139,6 +226,7 @@
 }
 .part1_left{
     width:46.6%;
+    position:relative;
 }
 .part1_right{
     width:53.4%;
@@ -159,7 +247,7 @@
 .part1_left img{
     float: left;
     padding-left: 80px;
-    padding-top: 96px;
+    padding-top: 120px;
 }
 
 .part2{
@@ -175,6 +263,7 @@
 }
 .part2_right{
     width:46.6%;
+    position: relative;
 }
 .part2_left h3{
     float:left;
@@ -188,7 +277,7 @@
     color:#3E4325;
 }
 .part2_right img{
-    padding-top:32px;
+    padding-top:92px;
 }
 .buy{
     margin-top: -86px;
@@ -205,6 +294,97 @@
 .buy div:hover{
     color:purple;
     cursor: pointer;
+}
+.dingzhi_small{
+    position: absolute;
+}
+.small1{
+    left:140px;
+    animation: small 1.8s 1s infinite alternate;
+}
+.small2{
+    left: 92px;
+    top: -44px;
+    animation: small 1s 3s infinite alternate;
+}
+.small3{
+    top: 14px;
+    left: 10px;
+    animation: small 1.2s 2s infinite alternate;
+}
+.small4{
+    top: -12px;
+    left: 309px;
+    animation: small 1.6s 2s infinite alternate;
+}
+.small5{
+    left: 96px;
+    top: 26px;
+    animation: small 1.8s 1s infinite alternate;
+}
+.small6{
+    top: -60px;
+    left: 162px;
+    animation: small 1.6s 2s infinite alternate;
+}
+.small7{
+    left: 432px;
+    top: 36px;
+    animation: small 1.2s 2s infinite alternate;
+}
+.small8{
+    top: -48px;
+    left: 290px;
+    animation: small 1s 3s infinite alternate;
+}
+.small9{
+    top: 140px;
+    left: 264px;
+    animation: small 1s 3s infinite alternate;
+}
+.small10{
+    top: 128px;
+    left: 174px;
+    animation: small 1.2s 2s infinite alternate;
+}
+.small11{
+    top: 18px;
+    left: 12px;
+    animation: small 1.6s 2s infinite alternate;
+}
+.small12{
+    top: -28px;
+    left: 102px;
+    animation: small 1.6s 2s infinite alternate;
+}
+.small13{
+    top: -28px;
+    left: 138px;
+    animation: small 1.6s 2s infinite alternate;
+}
+.small14{
+    top: 118px;
+    left: 400px;
+    animation: small 1.6s 2s infinite alternate;
+}
+.small15{
+    top: 18px;
+    left: 388px;
+    animation: small 1.2s 2s infinite alternate;
+}
+.small16{
+    top: 118px;
+    left: 154px;
+    animation: small 1.2s 2s infinite alternate;
+}
+@keyframes small {
+    0%{
+        transform: scale(1, 1);
+
+    }
+    100%{
+        transform: scale(1.2, 1.2);
+    }
 }
 
 /*footer开始*/
@@ -228,27 +408,27 @@
 .zhuangshi span{
     padding:0;
 }
-.zhuangshi span:nth-child(1){
+.zhuangshi .zs1{
     position: absolute;
     left: -16px;
     bottom: 33px;
 }
-.zhuangshi span:nth-child(2){
+.zhuangshi .zs2{
     position: absolute;
     left:86px;
     bottom: 26px;
 }
-.zhuangshi span:nth-child(3){
+.zhuangshi .zs3{
     position: absolute;
     left:246px;
     bottom: 26px;
 }
-.zhuangshi span:nth-child(4){
+.zhuangshi .zs4{
     position: absolute;
     left:464px;
     bottom: 22px;
 }
-.zhuangshi span:nth-child(5){
+.zhuangshi .returnTop{
     position: absolute;
     left:580px;
     bottom: -6px;
@@ -274,32 +454,32 @@
 .returnTop:hover{
     cursor:pointer;
 }
-.zhuangshi span:nth-child(6){
+.zhuangshi .zs5{
     position: absolute;
     left:710px;
     bottom: 26px;
 }
-.zhuangshi span:nth-child(7){
+.zhuangshi .zs6{
     position: absolute;
     left:850px;
     bottom: 33px;
 }
-.zhuangshi span:nth-child(8){
+.zhuangshi .zs7{
     position: absolute;
     left:970px;
     bottom: 28px;
 }
-.zhuangshi span:nth-child(9){
+.zhuangshi .zs8{
     position: absolute;
     left:1060px;
     bottom:66px;
 }
-.zhuangshi span:nth-child(10){
+.zhuangshi .zs9{
     position: absolute;
     right:-6px;
     bottom: 33px;
 }
-.zhuangshi span:nth-child(11){
+.zhuangshi .zs10{
     position: absolute;
     right: 66px;
     bottom: 66px;

@@ -164,16 +164,20 @@
     padding-top: 76px;
 }
 .downApp_title{
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     color:#333;
+    font-family: "微软雅黑", "microsoft yahei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
 }
 .downApp ul li div p:not(:first-child){
     padding-left: 8px;
     margin:0;
     color:#333;
-    font-size: 17px;
+    font-size: 16px;
+    font-family: "微软雅黑", "microsoft yahei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
 }
+
+
 /*footer开始*/
 .footer{
     width:100%;
@@ -195,27 +199,27 @@
 .zhuangshi span{
     padding:0;
 }
-.zhuangshi span:nth-child(1){
+.zhuangshi .zs1{
     position: absolute;
     left: -16px;
     bottom: 33px;
 }
-.zhuangshi span:nth-child(2){
+.zhuangshi .zs2{
     position: absolute;
     left:86px;
     bottom: 26px;
 }
-.zhuangshi span:nth-child(3){
+.zhuangshi .zs3{
     position: absolute;
     left:246px;
     bottom: 26px;
 }
-.zhuangshi span:nth-child(4){
+.zhuangshi .zs4{
     position: absolute;
     left:464px;
     bottom: 22px;
 }
-.zhuangshi span:nth-child(5){
+.zhuangshi .returnTop{
     position: absolute;
     left:580px;
     bottom: -6px;
@@ -241,32 +245,32 @@
 .returnTop:hover{
     cursor:pointer;
 }
-.zhuangshi span:nth-child(6){
+.zhuangshi .zs5{
     position: absolute;
     left:710px;
     bottom: 26px;
 }
-.zhuangshi span:nth-child(7){
+.zhuangshi .zs6{
     position: absolute;
     left:850px;
     bottom: 33px;
 }
-.zhuangshi span:nth-child(8){
+.zhuangshi .zs7{
     position: absolute;
     left:970px;
     bottom: 28px;
 }
-.zhuangshi span:nth-child(9){
+.zhuangshi .zs8{
     position: absolute;
     left:1060px;
     bottom:66px;
 }
-.zhuangshi span:nth-child(10){
+.zhuangshi .zs9{
     position: absolute;
     right:-6px;
     bottom: 33px;
 }
-.zhuangshi span:nth-child(11){
+.zhuangshi .zs10{
     position: absolute;
     right: 66px;
     bottom: 66px;

@@ -127,8 +127,7 @@
 }
 .cardsLeft{
     width:50%;
-    height:480px;
-
+    /*height:480px;*/
     float: left;
     /*border-right: 1px solid red;*/
     box-sizing: border-box;
@@ -141,11 +140,25 @@
     padding-left: 70px;
     padding-top: 74px;
 }
+.shibie{
+    margin-bottom: 132px;
+    margin-left: -62px;
+    animation: small .8s 0s infinite alternate;
+}
+@keyframes small {
+    0%{
+        transform: scale(1, 1);
+
+    }
+    100%{
+        transform: scale(1.2, 1.2);
+    }
+}
 .biaoti{
     border-bottom: 1px dashed #000;
     width:376px;
     height: 80px;
-    margin-top: 200px;
+    margin-top: 166px;
     margin-left: 124px;
 }
 .biaoti img{
@@ -160,41 +173,57 @@
 }
 .cardsRight p:nth-child(2){
     font-weight: bolder;
-    font-size:32px;
+    font-size:30px;
     margin-left: 86px;
     margin-top: 64px;
     margin-bottom: 12px;
 }
 .cardsRight p:nth-child(3){
-    font-size:22px;
+    font-size:18px;
     margin-left: 86px;
     margin-top: 0;
     color:#868674;
     width: 464px;
+    font-family: "微软雅黑", "microsoft yahei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
 }
 .cardsTop:nth-child(2) .biaoti img{
     margin-top: -42px;
     margin-left: -96px;
 }
 .cardsTop:nth-child(2) .cardsRight img{
-    margin-left:18px;
+    margin-left:176px;
     margin-top: 46px;
 }
+.cardsTop:nth-child(2) .cardsRight .tanhao{
+    position:relative;
+    top: -264px;
+    left: 114px;
+    animation: tanhao 1s infinite alternate;
+}
+@keyframes tanhao {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .cardsLeft .check{
-    margin-left:156px;
+    margin-left:70px;
     font-weight: bolder;
-    font-size:32px;
+    font-size:30px;
     margin-top: 64px;
     margin-bottom: 12px;
 }
 .cardsLeft .showCheck{
-    font-size:22px;
-    margin-left: 156px;
+    font-size:18px;
+    margin-left: 70px;
     margin-top: 0;
     color:#868674;
+    font-family: "微软雅黑", "microsoft yahei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
 }
 .cardsTop:nth-child(2) .biaoti{
-    margin-left:184px;
+    margin-left:96px;
 }
 .cardsTop:nth-child(3) .cardsLeft{
      margin-top:-152px;
@@ -211,14 +240,14 @@
 
 .qiyeduan:nth-child(2n-1) img{
     padding-top: 124px;
-    width: 540px;
-    padding-left: 102px;
+    /*width: 540px;*/
+    padding-left: 60px;
 }
 .qiyeduan:nth-child(2n) img{
-    width: 540px;
+    /*width: 540px;*/
 }
 .zntj{
-    margin-top:120px;
+    margin-top:68px;
 }
 .cardsTop .grgl img{
     padding-top:0;
@@ -228,7 +257,7 @@
 }
 .fbgg{
     margin-top: 66px;
-    margin-left: 188px;
+    margin-left: 108px;
 }
 .fbgg img{
     margin-top: -46px;
@@ -251,19 +280,37 @@
     left: 70px;
     display:none;
 }
-
-
+#kaoqin3{
+    padding-top: 146px;
+    padding-left: 164px;
+}
+#yun{
+    position: relative;
+    bottom: 318px;
+    left:-42px;
+    animation:yun 3s infinite alternate;
+}
+@keyframes yun {
+    0%{
+       left:-42px;
+    }
+    100%{
+        left:20px;
+    }
+}
 
 /*footer开始*/
 .footer{
+    width:100%;
     height:142px;
-    background:#162635;
+    background-color:#162635;
     padding-top:1px;
     position: relative;
+    /*overflow: hidden;*/
 }
 .zhuangshi{
     width:1200px;
-    height:150px;
+    height:94px;
     position: absolute;
     left: 0;
     right:0;
@@ -273,27 +320,27 @@
 .zhuangshi span{
     padding:0;
 }
-.zhuangshi span:nth-child(1){
+.zhuangshi .zs1{
     position: absolute;
     left: -16px;
     bottom: 33px;
 }
-.zhuangshi span:nth-child(2){
+.zhuangshi .zs2{
     position: absolute;
     left:86px;
     bottom: 26px;
 }
-.zhuangshi span:nth-child(3){
+.zhuangshi .zs3{
     position: absolute;
     left:246px;
     bottom: 26px;
 }
-.zhuangshi span:nth-child(4){
+.zhuangshi .zs4{
     position: absolute;
     left:464px;
     bottom: 22px;
 }
-.zhuangshi span:nth-child(5){
+.zhuangshi .returnTop{
     position: absolute;
     left:580px;
     bottom: -6px;
@@ -319,32 +366,32 @@
 .returnTop:hover{
     cursor:pointer;
 }
-.zhuangshi span:nth-child(6){
+.zhuangshi .zs5{
     position: absolute;
     left:710px;
     bottom: 26px;
 }
-.zhuangshi span:nth-child(7){
+.zhuangshi .zs6{
     position: absolute;
     left:850px;
     bottom: 33px;
 }
-.zhuangshi span:nth-child(8){
+.zhuangshi .zs7{
     position: absolute;
     left:970px;
     bottom: 28px;
 }
-.zhuangshi span:nth-child(9){
+.zhuangshi .zs8{
     position: absolute;
     left:1060px;
     bottom:66px;
 }
-.zhuangshi span:nth-child(10){
+.zhuangshi .zs9{
     position: absolute;
     right:-6px;
     bottom: 33px;
 }
-.zhuangshi span:nth-child(11){
+.zhuangshi .zs10{
     position: absolute;
     right: 66px;
     bottom: 66px;
@@ -357,6 +404,9 @@
     font-size: 14px;
     margin-top:54px;
     position: relative;
+}
+.beian{
+    color: #3A668F;
 }
 .rexian a{
     color:#fff;
@@ -372,4 +422,3 @@
     right: 88px;
     display:none;
 }
-

@@ -3,7 +3,7 @@ window.onload=function() {
     //jzbanner部分
     var jzimgs=document.getElementsByClassName("bannerTu");
     var jzlists=document.getElementsByClassName("jzbanner_list")[0].getElementsByTagName("li");
-    var jzbanbox=document.getElementsByClassName("jzBanner")[0];
+    var jzbanbox=document.getElementsByClassName("jzbanner_box")[0];
     var jzleftbut=document.getElementsByClassName("leftbut")[0];
     var jzrightbut=document.getElementsByClassName("rightbut")[0];
     var kuan=document.getElementsByClassName("bannerTu")[0].offsetWidth;
@@ -45,9 +45,9 @@ window.onload=function() {
     var t1=setInterval(move,3000);
 
     jzbanbox.onmouseover=function(){
-        clearInterval(t1);
         jzleftbut.style.display="block";
         jzrightbut.style.display="block";
+        clearInterval(t1);
     }
     jzbanbox.onmouseout=function(){
         t1=setInterval(move,3000);

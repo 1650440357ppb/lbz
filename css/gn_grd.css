@@ -108,10 +108,10 @@
     float:left;
     border-bottom: 1px solid #ccc;
 }
-.bigBox ul li:nth-child(2){
+.bigBox ul .bigBoxli2{
     border-bottom: 1px solid #F03B7A;
 }
-.bigBox ul li:nth-child(3){
+.bigBox ul .bigBoxli3{
     border-bottom: 1px solid #B2C23F;
 }
 .bigBox ul li div{
@@ -171,14 +171,14 @@
     font-size: 18px;
     padding-left: 18px;
 }
-.cardsRight p:nth-child(2){
+.cardsRight .cardsRightP1{
     font-weight: bolder;
     font-size:30px;
     margin-left: 86px;
     margin-top: 64px;
     margin-bottom: 12px;
 }
-.cardsRight p:nth-child(3){
+.cardsRight .cardsRightP2{
     font-size:18px;
     margin-left: 86px;
     margin-top: 0;
@@ -186,15 +186,15 @@
     width: 464px;
     font-family: "微软雅黑", "microsoft yahei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
 }
-.cardsTop:nth-child(2) .biaoti img{
+.cardsTop2 .biaoti img{
     margin-top: -42px;
     margin-left: -96px;
 }
-.cardsTop:nth-child(2) .cardsRight img{
+.cardsTop2 .cardsRight img{
     margin-left:176px;
     margin-top: 46px;
 }
-.cardsTop:nth-child(2) .cardsRight .tanhao{
+.cardsTop2 .cardsRight .tanhao{
     position:relative;
     top: -264px;
     left: 114px;
@@ -222,16 +222,16 @@
     color:#868674;
     font-family: "微软雅黑", "microsoft yahei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
 }
-.cardsTop:nth-child(2) .biaoti{
+.cardsTop2 .biaoti{
     margin-left:96px;
 }
-.cardsTop:nth-child(3) .cardsLeft{
+.cardsTop3 .cardsLeft{
      margin-top:-152px;
  }
-.cardsTop:nth-child(3) .cardsRight{
+.cardsTop3 .cardsRight{
     margin-top:-152px;
 }
-.cardsTop:nth-child(2) .cardsLeft{
+.cardsTop2 .cardsLeft{
     margin-top:-48px;
 }
 .cardsTop:nth-child(2) .cardsRight{

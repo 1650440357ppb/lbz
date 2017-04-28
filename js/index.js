@@ -1,12 +1,11 @@
 window.onload=function() {
-
     //jzbanner部分
-    var jzimgs=document.getElementsByClassName("bannerTu");
-    var jzlists=document.getElementsByClassName("jzbanner_list")[0].getElementsByTagName("li");
-    var jzbanbox=document.getElementsByClassName("jzbanner_box")[0];
-    var jzleftbut=document.getElementsByClassName("leftbut")[0];
-    var jzrightbut=document.getElementsByClassName("rightbut")[0];
-    var kuan=document.getElementsByClassName("bannerTu")[0].offsetWidth;
+    var jzimgs=getClass("bannerTu");
+    var jzlists=getClass("jzbanner_list")[0].getElementsByTagName("li");
+    var jzbanbox=getClass("jzbanner_box")[0];
+    var jzleftbut=getClass("leftbut")[0];
+    var jzrightbut=getClass("rightbut")[0];
+    var kuan=getClass("bannerTu")[0].offsetWidth;
     //alert(kuan);
 
     for(var i=1;i<jzimgs.length;i++){
@@ -45,9 +44,9 @@ window.onload=function() {
     var t1=setInterval(move,3000);
 
     jzbanbox.onmouseover=function(){
+        clearInterval(t1);
         jzleftbut.style.display="block";
         jzrightbut.style.display="block";
-        clearInterval(t1);
     }
     jzbanbox.onmouseout=function(){
         t1=setInterval(move,3000);
@@ -75,10 +74,10 @@ window.onload=function() {
     }
 
     //切换轮播部分
-    var imgs = document.getElementsByClassName("banner_con");
-    var leftBut = document.getElementsByClassName("leftbotn")[0];
-    var rightBut = document.getElementsByClassName("rightbotn")[0];
-    var list=document.getElementsByClassName("banner_list")[0];
+    var imgs = getClass("banner_con");
+    var leftBut = getClass("leftbotn")[0];
+    var rightBut = getClass("rightbotn")[0];
+    var list=getClass("banner_list")[0];
     var lists=list.children;
     var num = 0;
 
@@ -86,10 +85,12 @@ window.onload=function() {
         lists[i].name=i;
         lists[i].onmouseover=function(){
             for(var j=0;j<imgs.length;j++){
-                imgs[j].style.opacity=0;
+                //imgs[j].style.opacity=0;
                 //lists[j].className="";
+                imgs[j].style.display="none";
             }
-            imgs[this.name].style.opacity=1;
+            //imgs[this.name].style.opacity=1;
+            imgs[this.name].style.display="block";
             //this.className="list_active";
             num=this.name;
         }
@@ -110,7 +111,8 @@ window.onload=function() {
         }
 
         for(var i=0;i<imgs.length;i++){
-            imgs[i].style.opacity=0;
+            //imgs[i].style.opacity=0;
+            imgs[i].style.display="none";
         }
         animate(imgs[num],{opacity:1});
     }
@@ -140,7 +142,7 @@ window.onload=function() {
       //返回顶部
     document.documentElement.scrollTop = 1;
     var obj = document.documentElement.scrollTop?document.documentElement:document.body;
-    var returnTop=document.getElementsByClassName("returnTop")[0];
+    var returnTop=getClass("returnTop")[0];
     returnTop.onclick=function(){
         animate(obj,{scrollTop:0});
     }

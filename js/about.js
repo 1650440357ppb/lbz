@@ -2,11 +2,11 @@ window.onload=function(){
     //滚动条事件-发展历程
     document.documentElement.scrollTop = 1;
     var obj = document.documentElement.scrollTop?document.documentElement:document.body;
-    var returnTop=document.getElementsByClassName("returnTop")[0];
+    var returnTop=getClass("returnTop")[0];
 
-    var develope=document.getElementsByClassName("develope")[0];
-    var step=document.getElementsByClassName("step_text");
-    var angle=document.getElementsByClassName("angle");
+    var develope=getClass("develope")[0];
+    var step=getClass("step_text");
+    var angle=getClass("angle");
 
     window.onscroll=function(){
         //判断滚动条位置是否走到了要出现的位置

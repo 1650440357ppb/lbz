@@ -16,8 +16,45 @@
     <script type="text/javascript" src="js/jquery1.10.2.js"></script>
     <script src="js/animate.js"></script>
     <script src="js/index.js"></script>
+    <script type="text/javascript">
+        //        (function () {
+        //            var ua = navigator.userAgent.toLowerCase(),
+        //                    sys = ua.match(/msie ([\d.]+)/);
+        //            if (!window.ActiveXObject && !sys || (sys && parseFloat(sys[1]) >= 8)) {
+        //                window.location.href = location.origin + location.pathname;
+        //            }
+        //        })();
+
+//        var DEFAULT_VERSION = 8;
+//        var ua = navigator.userAgent.toLowerCase();
+//        var isIE = ua.indexOf("msie")>-1;
+//        var safariVersion;
+//        if(isIE){
+//            safariVersion =  ua.match(/msie ([\d.]+)/)[1];
+//            var sa = parseInt(safariVersion);
+//            if(safariVersion <= DEFAULT_VERSION ){
+//                //alert("ie8以下")
+//                window.location.href='message1.html';
+//            }else{
+//                //alert("ie8以上")
+//                window.location.href='index.html';
+//            }
+//        }else{
+//            // alert("非ie")
+//            window.location.href='index.html';
+//        }
+    </script>
 </head>
 <body>
+<div class="msg" style="height:42px;background: #dbdbdb;">
+    <p>
+        <img src="img/msg.png" alt=""/>您的浏览器版本过低，使用
+        <a href=""><img src="img/chorme.png" alt=""/></a>
+        <a href=""><img src="img/ff.png" alt=""/></a>
+        浏览体验更佳
+        <img src="img/closeMsg.png" alt=""/>
+    </p>
+</div>
 <!--头部-->
 <div class="header">
     <div class="body">
@@ -246,35 +283,35 @@
 </html>
 
 <script>
-$(function(){
+    $(function(){
 //    视频模块
-    if (/(iPhone|iPad|iPod|iOS|Android)/.test(navigator.userAgent)) {
-        window.location.href ="m.html";
-    }
-    $("#btn-play-video").click(function () {
-        $("#dd-video-dialog").show();
-        $('#video').trigger('play');
-    });
-    $(".video .close").click(function () {
-        $("#dd-video-dialog").hide();
-        $('#video').trigger('pause');
-    });
-    $("#btn-play-video").mouseover(function(){
-        this.src="img/play1.png";
-    }).mouseout(function(){
-        this.src="img/play.png";
-    })
+        if (/(iPhone|iPad|iPod|iOS|Android)/.test(navigator.userAgent)) {
+            window.location.href ="m.html";
+        }
+        $("#btn-play-video").click(function () {
+            $("#dd-video-dialog").show();
+            $('#video').trigger('play');
+        });
+        $(".video .close").click(function () {
+            $("#dd-video-dialog").hide();
+            $('#video').trigger('pause');
+        });
+        $("#btn-play-video").mouseover(function(){
+            this.src="img/play1.png";
+        }).mouseout(function(){
+            this.src="img/play.png";
+        })
 
 
 
 
 //底部微信qq二维码
-    $(".weixinPic").mouseover(function(){
-        $(".weixinerweima").css("display","block");
+        $(".weixinPic").mouseover(function(){
+            $(".weixinerweima").css("display","block");
 
-    }).mouseout(function(){
-        $(".weixinerweima").css("display","none");
-    })
+        }).mouseout(function(){
+            $(".weixinerweima").css("display","none");
+        })
 
 //    $(".qqPic img").mouseover(function(){
 //        this.src="http://wpa.qq.com/pa?p=2:1650440357:7";
@@ -283,6 +320,6 @@ $(function(){
 //    })
 
 
-})
+    })
 
 </script>

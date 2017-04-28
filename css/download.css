@@ -149,7 +149,7 @@
 .downApp ul li div,img{
     float:left;
 }
-.downApp ul li:nth-child(1) img{
+.downApp ul .app1 img{
     padding-top: 76px;
     padding-left: 20px;
 }
@@ -159,7 +159,7 @@
     width:282px;
     line-height: 28px;
 }
-.downApp ul li:nth-child(2) img{
+.downApp ul .app2 img{
     padding-left:78px;
     padding-top: 76px;
 }
